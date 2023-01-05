@@ -1,8 +1,8 @@
 import { NestFactory } from '@nestjs/core';
-import { DuesModule } from './dues.module';
+import { MantainerModule } from './mantainer.module';
 
 async function bootstrap() {
-  const app = await NestFactory.create(DuesModule);
+  const app = await NestFactory.create(MantainerModule);
   await app.listen(3000);
 }
 bootstrap();

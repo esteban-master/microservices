@@ -1,30 +1,21 @@
 {
   "$schema": "https://json.schemastore.org/nest-cli",
   "collection": "@nestjs/schematics",
-  "sourceRoot": "apps/dues/src",
+  "sourceRoot": "apps/mantainer/src",
   "monorepo": true,
-  "root": "apps/dues",
+  "root": "apps/mantainer",
   "compilerOptions": {
     "webpack": true,
-    "tsConfigPath": "apps/dues/tsconfig.app.json"
+    "tsConfigPath": "apps/mantainer/tsconfig.app.json"
   },
   "projects": {
-    "dues": {
+    "mantainer": {
       "type": "application",
-      "root": "apps/dues",
+      "root": "apps/mantainer",
       "entryFile": "main",
-      "sourceRoot": "apps/dues/src",
+      "sourceRoot": "apps/mantainer/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/dues/tsconfig.app.json"
-      }
-    },
-    "projects": {
-      "type": "application",
-      "root": "apps/projects",
-      "entryFile": "main",
-      "sourceRoot": "apps/projects/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/projects/tsconfig.app.json"
+        "tsConfigPath": "apps/mantainer/tsconfig.app.json"
       }
     }
   }
